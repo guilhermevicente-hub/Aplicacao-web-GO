@@ -103,4 +103,4 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
 2. Após criar a tela de edição, preenchemos o formulário com as informações do produto exibindo os dados já cadastrados;
 
-3. Atualizamos o produto, buscando os dados alterados na tela e executando o [update](atualização) no banco de dados.
+3. Atualizamos o produto, buscando os dados alterados na tela e executando o [update] (atualização) no banco de dados.
