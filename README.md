@@ -94,4 +94,17 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
 2. Para melhorar a remoção dos produtos, criamos uma função em Javascript perguntando se queremos de fato, deletar o produto;
 
+<<<<<<< HEAD
 3. Removemos o código HTML duplicado da [index] e do arquivo new, criando as seguintes partials: [_head.html] e [_menu.html].
+=======
+3. Removemos o código HTML duplicado da [index] e do arquivo new, criando as seguintes partials: [_head.html] e [_menu.html].
+
+
+## Capítulo 5
+
+1. Criamos um botão na linha de cada produto que nos direciona para a tela de edição;
+
+2. Após criar a tela de edição, preenchemos o formulário com as informações do produto exibindo os dados já cadastrados;
+
+3. Atualizamos o produto, buscando os dados alterados na tela e executando o [update] (atualização) no banco de dados.
+>>>>>>> ffa32ee2ce53d0fc2f26cc244496a714d6257920
