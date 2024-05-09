@@ -58,6 +58,7 @@ Se você encontrar problemas ou tiver sugestões para melhorias, sinta-se à von
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
+
 ## Capítulo 1
 
 1. Criamos o nosso projeto no workspace correto, dentro do GOPATH (dentro da pasta src, github.com, seguido do nome de usuário do Github);
@@ -66,6 +67,7 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
 3. Em seguida criamos uma struct de Produto, onde instanciamos alguns produtos e exibimos de forma dinâmica em nossa index.html.
 
+
 ## Capítulo 2 
 
 1. Instalamos o Postgres para armazenar nossos produtos de forma segura;
@@ -73,6 +75,7 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 2. Criamos uma função chamada conectaComBancoDeDados() para abrir a conexão com o banco de dados;
 
 3. Alteramos nosso código para exibir os produtos que estão cadastrados lá no banco de dados.
+
 
 ## Capítulo 3
 
@@ -83,3 +86,12 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 3. Buscamos os dados da página new com o código r.FormValue() para cada input (nome, descrição, preço e quantidade) no controller de produtos;
 
 4. Salvamos o produto através do modelo de produto criando a função CriaNovoProduto().
+
+
+## Capítulo 4
+
+1. Criamos um botão na linha de cada produto que assim que clicado, deletava o produto do banco de dados;
+
+2. Para melhorar a remoção dos produtos, criamos uma função em Javascript perguntando se queremos de fato, deletar o produto;
+
+3. Removemos o código HTML duplicado da ## index e do arquivo new, criando as seguintes partials: ## _head.html e ## _menu.html.
