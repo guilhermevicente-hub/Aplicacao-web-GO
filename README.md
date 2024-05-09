@@ -94,4 +94,4 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
 2. Para melhorar a remoção dos produtos, criamos uma função em Javascript perguntando se queremos de fato, deletar o produto;
 
-3. Removemos o código HTML duplicado da ## index e do arquivo new, criando as seguintes partials: ## _head.html e ## _menu.html.
+3. Removemos o código HTML duplicado da [index] e do arquivo new, criando as seguintes partials: [_head.html] e [_menu.html].
