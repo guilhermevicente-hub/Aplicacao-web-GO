@@ -21,11 +21,11 @@ Antes de iniciar a aplicação, é necessário configurar o banco de dados Postg
 
 Antes de executar a aplicação, você precisará configurar as variáveis de ambiente necessárias. Para isso, crie um arquivo `.env` na raiz do projeto e defina as seguintes variáveis:
 
-DB_HOST=host_do_seu_banco_de_dados
-DB_PORT=porta_do_banco_de_dados
-DB_USER=usuario_do_banco_de_dados
-DB_PASSWORD=senha_do_usuario_do_banco_de_dados
-DB_NAME=nome_do_banco_de_dados
+-  DB_HOST=host_do_seu_banco_de_dados
+-  DB_PORT=porta_do_banco_de_dados
+-  DB_USER=usuario_do_banco_de_dados
+-  DB_PASSWORD=senha_do_usuario_do_banco_de_dados
+-  DB_NAME=nome_do_banco_de_dados
 
 
 Certifique-se de substituir os valores acima pelos detalhes do seu banco de dados PostgreSQL.
@@ -36,16 +36,16 @@ Para executar a aplicação, siga estas etapas:
 
 1. Instale as dependências do projeto:
 
-  go mod tidy
+  ## go mod tidy
 
 3. Compile o código:
 
-  go build
+ ## go build
 
 
 4. Execute a aplicação:
 
-  ./nome_do_executável
+ ## ./nome_do_executável
 
 
 A aplicação estará disponível em `http://localhost:8000`.
@@ -58,6 +58,28 @@ Se você encontrar problemas ou tiver sugestões para melhorias, sinta-se à von
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
+## Capítulo 1
 
+1. Criamos o nosso projeto no workspace correto, dentro do GOPATH (dentro da pasta src, github.com, seguido do nome de usuário do Github);
 
+2. Aprendemos como subir um servidor através da função http.ListenAndServe(), exibindo uma tabela com nossos produtos;
 
+3. Em seguida criamos uma struct de Produto, onde instanciamos alguns produtos e exibimos de forma dinâmica em nossa index.html.
+
+## Capítulo 2 
+
+1. Instalamos o Postgres para armazenar nossos produtos de forma segura;
+
+2. Criamos uma função chamada conectaComBancoDeDados() para abrir a conexão com o banco de dados;
+
+3. Alteramos nosso código para exibir os produtos que estão cadastrados lá no banco de dados.
+
+## Capítulo 3
+
+1. Modularizamos o código para tornar a manutenção e/ou atualização mais clara, criando as pastas controllers, db, models, routes e templates;
+
+2. Criamos uma página para criar novos produtos e uma rota capaz de atender essa requisição http.HandleFunc("/new", controllers.New);
+
+3. Buscamos os dados da página new com o código r.FormValue() para cada input (nome, descrição, preço e quantidade) no controller de produtos;
+
+4. Salvamos o produto através do modelo de produto criando a função CriaNovoProduto().
